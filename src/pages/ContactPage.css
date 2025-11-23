@@ -159,12 +159,17 @@ p {
   margin-right: 10px;
 }
 
-/* Mini Maps */
 .mini-map {
-  margin-top: 15px;
+  width: 100%;
+  margin: 18px 0 0 0;
+}
+.mini-map iframe {
+  width: 100%!important;
+  min-height: 180px;
+  max-height: 280px;
   border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  border: none;
+  display: block;
 }
 
 /* About Summary Section - Enhanced to be full width */

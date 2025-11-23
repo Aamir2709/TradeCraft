@@ -1,18 +1,5 @@
 import React from "react";
 import "./ContactPage.css";
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
-
-const GOOGLE_API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
-
-const containerStyle = {
-  width: "100%",
-  height: "250px", // Reduced height
-};
-
-const center = {
-  lat: 15.3173,
-  lng: 75.7139,
-};
 
 const locations = [
   {
@@ -56,17 +43,16 @@ const ContactPage = () => {
                         Mumbai 400080
                         </a>
                       </p>
-                      <div className="mini-map">
-                        <LoadScript googleMapsApiKey={GOOGLE_API_KEY}>
-                          <GoogleMap
-                            mapContainerStyle={containerStyle}
-                            center={locations[0].position}
-                            zoom={14}
-                          >
-                            <Marker position={locations[0].position} />
-                          </GoogleMap>
-                        </LoadScript>
-                      </div>
+                    <div className="mini-map">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d775.2968399420402!2d72.95489065193813!3d19.17197551518075!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b9d13ceb3aed%3A0x51151a1033088d18!2sShree%20Samarth%20Plaza!5e1!3m2!1sen!2sin!4v1763905023919!5m2!1sen!2sin"
+                        height="250"
+                        style={{ border: 0, borderRadius: "8px" }}
+                        allowFullScreen=""
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        title="Maharashtra Office Location"
+                      />
+                    </div>
                     </div>
                   </div>
 
@@ -82,17 +68,16 @@ const ContactPage = () => {
                         Manipal, Udupi District, Karnataka 576104
                         </a>
                       </p>
-                      <div className="mini-map">
-                        <LoadScript googleMapsApiKey={GOOGLE_API_KEY}>
-                          <GoogleMap
-                            mapContainerStyle={containerStyle}
-                            center={locations[1].position}
-                            zoom={14}
-                          >
-                            <Marker position={locations[1].position} />
-                          </GoogleMap>
-                        </LoadScript>
-                      </div>
+                    <div className="mini-map">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1597.368813224956!2d74.78847552188181!3d13.337034124589108!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbca50060981bc9%3A0xd6b03fcb43324247!2sMangala%20Colony%20%2C%202nd%20Cross!5e1!3m2!1sen!2sin!4v1763905259089!5m2!1sen!2sin"
+                        height="250"
+                        style={{ border: 0, borderRadius: "8px" }}
+                        allowFullScreen=""
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        title="Maharashtra Office Location"
+                      />
+                    </div>
                     </div>
                   </div>
 
